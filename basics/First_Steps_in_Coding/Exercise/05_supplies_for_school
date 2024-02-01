@@ -10,4 +10,4 @@ function SuppliesForSchool(input) {
     console.log(money_needed);
 }
 
-SuppliesForSchool(["2", "3", "4", "25"])
+// SuppliesForSchool(["2", "3", "4", "25"])
