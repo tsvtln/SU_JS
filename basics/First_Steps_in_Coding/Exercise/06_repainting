@@ -13,4 +13,4 @@ function Repaiting(input) {
     console.log(materials_sum + workers_sum)
 }
 
-Repaiting(["10", "11", "4", "8"])
+// Repaiting(["10", "11", "4", "8"])
