@@ -8,4 +8,4 @@ function greaterNumber(numbers) {
     }
 }
 
-greaterNumber((["5", "3"]))
+// greaterNumber((["5", "3"]))
