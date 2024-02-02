@@ -6,5 +6,5 @@ function excellent_result(grade) {
 
 // excellent_result(["6"])
 // excellent_result(["5"])
-excellent_result(["5.50"])
+// excellent_result(["5.50"])
 // excellent_result(["5.49"])
