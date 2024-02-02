@@ -20,6 +20,4 @@ function lunchBreak(input) {
 }
 
 // lunchBreak(["Game of Thrones", "60", "96"]);
-lunchBreak(["Teen Wolf",
-"48",
-"60"]);
+// lunchBreak(["Teen Wolf", "48", "60"]);
