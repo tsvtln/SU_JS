@@ -41,5 +41,5 @@ function toyShop(input) {
     console.log(to_print);
 }
 
-toyShop(["1299.8", "20", "25", "30", "50", "10"])
+// toyShop(["1299.8", "20", "25", "30", "50", "10"])
 // toyShop(["320", "8", "2", "5", "5", "5"])
