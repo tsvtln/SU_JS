@@ -9,4 +9,4 @@ function FoodDelivery(input) {
     menus_sum += (menus_sum * 0.2) + 2.5;
     console.log(menus_sum);
 }
-FoodDelivery(["2", "4", "3"])
+// FoodDelivery(["2", "4", "3"])
