@@ -36,6 +36,9 @@ function fruitShop(input) {
             case 'Saturday':
             case 'Sunday':
                 to_print = prices['Weekend'][fruit] * quantity;
+                break;
+            default:
+                to_print = 'error';
         }
     }
     else {
