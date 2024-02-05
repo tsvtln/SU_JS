@@ -27,16 +27,17 @@ function smallShop(input) {
             peanuts: 1.55
         }
     }
-    if (city === 'Sofia') {
-        to_print = prices['Sofia'][product] * quantity;
-    }
-    else if (city === 'Plovdiv') {
-        to_print = prices['Plovdiv'][product] * quantity;
-    }
-    else if (city === 'Varna') {
-        to_print = prices['Varna'][product] * quantity;
-    }
+    switch (city) {
+        case 'Sofia':
+            to_print = prices['Sofia'][product] * quantity;
+            break;
+        case 'Plovdiv':
+            to_print = prices['Plovdiv'][product] * quantity;
+            break;
+        case 'Varna':
+            to_print = prices['Varna'][product] * quantity;
 
+    }
     console.log(to_print);
 }
 
