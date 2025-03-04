@@ -1,7 +1,19 @@
-function oo(){
-    let word = '#mimimi';
+function wFinder(w, sentence){
+    let wdsArray = sentence.split(' ');
+    let tp = '';
 
-    console.log(word.slice(1));
+    for(wd of wdsArray){
+        if(wd.toLowerCase() === w){
+            tp = w;
+        }
+    }
+
+    if(tp === ''){
+        tp = `${w} not found!`
+    }
+
+    console.log(tp)
 }
 
-oo();
+wFinder('javascript', 'JavaScript is the best programming language');
+wFinder('python', 'JavaScript is the best programming language');
