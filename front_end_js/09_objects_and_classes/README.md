@@ -44,3 +44,28 @@ Math.min.apply(Math, [v1, v2, v3])
 function censoreship(sentence, cesnorWord) {
     console.log(sentence.replaceAll(cesnorWord, '*'.repeat(cesnorWord.length)));
 }
+
+
+### Class example
+function catCreator(arr) {
+    class Cat{
+        constructor(name_, age) {
+            this.name = name_;
+            this.age = age;
+        }
+        meow(){
+            console.log(`${this.name}, age ${this.age} says Meow`);
+        }}
+
+    let catsInfo = {}
+
+    for (let catData of arr){
+        let [catName, catAge] = catData.split(' ');
+        catsInfo[catName] = catAge;
+    }
+
+    for (let [cat, age] of Object.entries(catsInfo)){
+        let cato = new Cat(cat, age);
+        cato.meow();
+    }
+}
