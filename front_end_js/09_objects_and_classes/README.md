@@ -68,6 +68,9 @@ function censoreship(sentence, cesnorWord) {
 ### Class example
 function catCreator(arr) {
     class Cat{
+        name_;
+        age;
+
         constructor(name_, age) {
             this.name = name_;
             this.age = age;
