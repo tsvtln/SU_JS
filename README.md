@@ -98,3 +98,7 @@ let myMap = new Map();  // create map(class)
 myMap.set('Peter Parker', '29');  // sets values
 myMap.get('Peter Parker')  // greps obj
 myMap.has('Peter Parker')  // check for obj
+
+for (let [name, age] of myMap){
+    console.log(name, age);
+}  // traverse the map
