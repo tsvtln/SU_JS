@@ -9,6 +9,25 @@
         return Object.fromEntries(Object.entries(obj).sort(([keyA], [keyB]) => keyA.localeCompare(keyB)));
     }
 
+
+    // or
+
+    function sortEntries(a, b) {
+        return a[0].localeCompare(b[0]);
+    }
+
+    let phoneBook = {
+        'John Smith': '+1-555-7988',
+        'Anne Frank': '+1-555-4719',
+        'Peter Parker': '+1-555-3245',
+    }
+
+    let entries = Object.entries(phoneBook);
+    entries.sort(sortEntries);
+
+    const sortedEntries = Object.fromEntries(entries);
+
+
 ### Create matrix
 const mxSpread = (Array(int).fill().map(() => (Array(int).fill(int).join(' ')))).join('\n');
 
