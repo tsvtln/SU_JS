@@ -1,26 +1,28 @@
-function solve(arr1, arr2){
-    let store = {};
-    store = addInStore(arr1, store);
-    store = addInStore(arr2, store);
-    Object.entries(store).map(([key, value]) => console.log(`${key} -> ${value}`))
+function movies(arr) {
+    let movies = [];
 
-    function addInStore(arr, store){
-        for (let i = 0; i < arr.length; i += 2){
-            let product = arr[i];
-            let quantiy = arr[i + 1];
-            if (!(product in store)){
-                store[product] = 0;
+    for (let movie of arr) {
+        if (movie.startsWith("addMovie ")) {
+            let movieName = movie.replace("addMovie ", "").trim();
+            movies.push({ name: movieName });
+        } else if (movie.includes(" directedBy ")) {
+            let [movieName, director] = movie.split(" directedBy ");
+            let existingMovie = movies.find(m => m.name === movieName.trim());
+            if (existingMovie) {
+                existingMovie.director = director.trim();
             }
-            store[product] += Number(quantiy);
+        } else if (movie.includes(" onDate ")) {
+            let [movieName, date] = movie.split(" onDate ");
+            let existingMovie = movies.find(m => m.name === movieName.trim());
+            if (existingMovie) {
+                existingMovie.date = date.trim();
+            }
         }
-        return store
-    };
-}
+    }
 
-solve([
-    'Chips', '5', 'CocaCola', '9', 'Bananas', '14', 'Pasta', '4', 'Beer', '2'
-    ],
-    [
-    'Flour', '44', 'Oil', '12', 'Pasta', '7', 'Tomatoes', '70', 'Bananas', '30'
-    ]
-    )
+    for (let movie of movies) {
+        if (movie.name && movie.director && movie.date) {
+            console.log(JSON.stringify(movie));
+        }
+    }
+}
