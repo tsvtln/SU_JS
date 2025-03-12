@@ -5,7 +5,7 @@
     }
 ```
 
-### Sort objects
+### Sort objects (dict) by key
 ```
     function sortObjectByKeys(obj) {
         return Object.fromEntries(Object.entries(obj).sort(([keyA], [keyB]) => keyA.localeCompare(keyB)));
@@ -28,6 +28,31 @@
     entries.sort(sortEntries);
 
     const sortedEntries = Object.fromEntries(entries);
+```
+
+
+### Sort dict by value
+```
+var dict = {
+  "x": 1,
+  "y": 6,
+  "z": 9,
+  "a": 5,
+  "b": 7,
+  "c": 11,
+  "d": 17,
+  "t": 3
+};
+
+// Create items array
+var items = Object.keys(dict).map(function(key) {
+  return [key, dict[key]];
+});
+
+// Sort the array based on the second element
+items.sort(function(first, second) {
+  return second[1] - first[1];
+});
 ```
 
 ### Create matrix
@@ -117,28 +142,4 @@ myMap.has('Peter Parker')  // check for obj
 for (let [name, age] of myMap){
     console.log(name, age);
 }  // traverse the map
-```
-
-### Sort dict by value
-```
-var dict = {
-  "x": 1,
-  "y": 6,
-  "z": 9,
-  "a": 5,
-  "b": 7,
-  "c": 11,
-  "d": 17,
-  "t": 3
-};
-
-// Create items array
-var items = Object.keys(dict).map(function(key) {
-  return [key, dict[key]];
-});
-
-// Sort the array based on the second element
-items.sort(function(first, second) {
-  return second[1] - first[1];
-});
 ```
