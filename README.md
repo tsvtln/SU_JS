@@ -119,7 +119,7 @@ for (let [name, age] of myMap){
 }  // traverse the map
 ```
 
-### Sort dict by key
+### Sort dict by value
 ```
 var dict = {
   "x": 1,
