@@ -55,6 +55,22 @@ items.sort(function(first, second) {
 });
 ```
 
+
+```     
+function sort_object(obj) {
+    let items = Object.entries(obj); 
+    items.sort((a, b) => b[1] - a[1]); 
+    
+    let sorted_obj = {};
+    items.forEach(([key, value]) => {
+        sorted_obj[key] = value;
+    });
+
+    return sorted_obj;
+} 
+
+```
+
 ### Create matrix
 ```
 const mxSpread = (Array(int).fill().map(() => (Array(int).fill(int).join(' ')))).join('\n');
