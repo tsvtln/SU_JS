@@ -1,5 +1,6 @@
 function sumTable() {
-    let rows = [...document.querySelectorAll('tbody tr')];
+    let rows = Array.from(document.querySelectorAll('tbody tr'));
+    rows.shift();
     let output = rows.pop();
 
     let sum = 0;
@@ -11,5 +12,4 @@ function sumTable() {
 
     let outputCol = output.children[output.children.length - 1];
     outputCol.textContent = sum;
-
 }
