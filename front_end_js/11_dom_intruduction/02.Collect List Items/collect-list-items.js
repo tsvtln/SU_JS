@@ -11,5 +11,4 @@ function extractText() {
 
     let output = document.getElementById('result');
     output.value = result.join('\n')
-
 }
