@@ -159,3 +159,22 @@ for (let [name, age] of myMap){
     console.log(name, age);
 }  // traverse the map
 ```
+
+
+## DOM 
+
+### Text Content 
+textContent is a property in JavaScript that lets you get or change the text inside an HTML element.
+
+If you have this HTML:
+```
+<p id="example">Hello, world!</p>
+```
+
+You can get the text inside it like this:
+```
+let el = document.getElementById("example");
+console.log(el.textContent); // Output: "Hello, world!"
+```
+
+It gives you just the text inside the element as string.
