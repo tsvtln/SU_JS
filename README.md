@@ -178,3 +178,19 @@ console.log(el.textContent); // Output: "Hello, world!"
 ```
 
 It gives you just the text inside the element as string.
+
+### Get text content of elements
+
+        <ul id="towns">
+            <li>Sofia</li>
+            <li>Pleven</li>
+            <li>Varna</li>
+            <li>Plovdiv</li>
+            <li>Dolna Bania</li>
+            <li>Gorna Bania</li>
+        </ul>
+
+let towns = document.getElementById('towns');
+for (let row of towns.children) {
+    ...
+}
