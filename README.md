@@ -194,3 +194,6 @@ let towns = document.getElementById('towns');
 for (let row of towns.children) {
     ...
 }
+
+### Query selector
+   const towns = Array.from(document.querySelectorAll('ul li'));
