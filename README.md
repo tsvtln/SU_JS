@@ -206,3 +206,21 @@ for (let row of towns.children) {
     list.appendChild(newLi);
 
 ### Deleting an element
+
+example:
+function deleteByEmail() {
+    let input = document.querySelector('[name="email"]');
+    let pattern = input.value;
+
+    // let rows = Array.from(document.querySelectorAll('tbody tr:nth-child(2)'));
+    let rows = Array.from(document.querySelectorAll('tbody tr'));
+
+    for (let row of rows) {
+        let emailCol = row.children[1];
+        let email = emailCol.textContent;
+
+        if (email.includes(pattern)) {
+            row.remove();
+        }
+    }
+}
