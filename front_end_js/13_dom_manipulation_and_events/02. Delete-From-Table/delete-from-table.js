@@ -24,6 +24,7 @@ function deleteByEmail() {
     let output = document.getElementById('result');
     if (deleted) {
         output.textContent = 'Deleted.';
+        input.value = '';
     } else {
         output.textContent = 'Not found.';
     }
