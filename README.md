@@ -197,3 +197,12 @@ for (let row of towns.children) {
 
 ### Query selector
    const towns = Array.from(document.querySelectorAll('ul li'));
+
+### Adding an element
+    let newLi = document.createElement('li');
+    newLi.textContent = text;
+
+    let list = document.getElementById('items');
+    list.appendChild(newLi);
+
+### Deleting an element
