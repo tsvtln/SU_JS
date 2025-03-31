@@ -180,7 +180,7 @@ console.log(el.textContent); // Output: "Hello, world!"
 It gives you just the text inside the element as string.
 
 ### Get text content of elements
-
+```
         <ul id="towns">
             <li>Sofia</li>
             <li>Pleven</li>
@@ -194,20 +194,26 @@ let towns = document.getElementById('towns');
 for (let row of towns.children) {
     ...
 }
+```
 
 ### Query selector
+```
    const towns = Array.from(document.querySelectorAll('ul li'));
+```
 
 ### Adding an element
+```
     let newLi = document.createElement('li');
     newLi.textContent = text;
 
     let list = document.getElementById('items');
     list.appendChild(newLi);
+```
 
 ### Deleting an element
 
 example:
+```
 function deleteByEmail() {
     let input = document.querySelector('[name="email"]');
     let pattern = input.value;
@@ -239,9 +245,11 @@ function deleteByEmail() {
         output.textContent = 'Not found.';
     }
 }
+```
 
 
 ### Event listener and deleting elements
+```
 function addItem() {
     let input = document.getElementById('newItemText');
     let text = input.value;
@@ -270,3 +278,4 @@ function addItem() {
         item.remove();
     }
 }
+```
