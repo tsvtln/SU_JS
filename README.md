@@ -286,8 +286,13 @@ function addItem() {
 
 from the dir
 ```
+npm install
+```
+
+```
  npm start
 ```
+
 <full path> /server$
 ```
 node server.js
