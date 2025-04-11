@@ -162,5 +162,7 @@ front_end_js/16_asynchronous_programming/01.Bus-Stop/node_modules
 front_end_js/16_asynchronous_programming/01.Bus-Stop/package-lock.json
 front_end_js/17_HTTP_and_AJAX/01.Blog/node_modules
 front_end_js/17_HTTP_and_AJAX/01.Blog/package-lock.json
+*node_modules*
+*package-lock.json
 *zip
 .vscode/
