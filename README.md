@@ -293,7 +293,7 @@ npm install
 npm start
 ```
 
-/<full path/> /server$
+***full path***/server$
 ```
 node server.js
 ```
