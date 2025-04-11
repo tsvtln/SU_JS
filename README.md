@@ -279,3 +279,16 @@ function addItem() {
     }
 }
 ```
+
+## Node JS/NPM
+
+### Start the services
+
+from the dir
+```
+ npm start
+```
+<full path> /server$
+```
+node server.js
+```
