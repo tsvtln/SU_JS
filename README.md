@@ -285,6 +285,10 @@ function addItem() {
 ### Start the services
 
 from the dir
+
+```
+rm -rf node_modules package-lock.json
+```
 ```
 npm install
 ```
@@ -293,7 +297,7 @@ npm install
 npm start
 ```
 
-/<full path/> /server$
+***full path***/server$
 ```
 node server.js
 ```
