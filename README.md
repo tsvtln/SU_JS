@@ -285,7 +285,9 @@ function addItem() {
 ### Start the services
 
 from the dir
-
+```
+npm cache clean --force
+```
 ```
 rm -rf node_modules package-lock.json
 ```
